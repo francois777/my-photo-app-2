@@ -14,13 +14,21 @@ Use latest stable version of node before doing:
 
 For this application, node v16.14 was used.
 
+## Github
+
+`https://github.com/francois777/my-photo-app-2`
+
+## Working with Heroku
+
+`https://my-photo-app-2.herokuapp.com`
+
 `heroku create`
 
 `heroku apps:rename <new ap name>`
 
 `git push heroku main`
 
-## Start working with Devise
+## Working with Devise
 
 1. Add devise rubygems
 2. `rails g devise:install`
@@ -37,6 +45,17 @@ For this application, node v16.14 was used.
 Retrieve missing assets from this source:
 
 `wget https://www.python.org/static/apple-touch-icon-144x144-precomposed.png`
+
+## Working with sendgrid in Heroku
+
+`heroku addons:create sendgrid:starter`
+
+Response:
+`Created sendgrid-symmetrical-83723 as SENDGRID_PASSWORD, SENDGRID_USERNAME`
+
+`heroku config:set SENDGRID_USER_NAME=apikey`
+
+`heroku config:set SENDGRID_PASSWORD=<api-key>`
 
 ## Miscellaneous
 This README would normally document whatever steps are necessary to get the
