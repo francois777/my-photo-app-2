@@ -20,6 +20,24 @@ For this application, node v16.14 was used.
 
 `git push heroku main`
 
+## Start working with Devise
+
+1. Add devise rubygems
+2. `rails g devise:install`
+3. `rails g devise User`
+4. Add devise :confirmable to Users - read devise wiki
+  - Uncomment confirmable fields in migration file before `db:migrate`
+5. `rails db:migrate`
+6. Apply authentication to `ApplicationController`
+7. `rails g bootstrap:install static`
+8. `rails g bootstrap:layout application`
+9. `rails g devise:views:locale en`
+10. `rails g devise:views:bootstrap_templates`
+
+Retrieve missing assets from this source:
+
+`wget https://www.python.org/static/apple-touch-icon-144x144-precomposed.png`
+
 ## Miscellaneous
 This README would normally document whatever steps are necessary to get the
 application up and running.
