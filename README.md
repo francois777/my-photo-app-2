@@ -46,16 +46,19 @@ Retrieve missing assets from this source:
 
 `wget https://www.python.org/static/apple-touch-icon-144x144-precomposed.png`
 
-## Working with sendgrid in Heroku
+## Working with SendGrid in Heroku
 
+After setting up your heroku account,
 `heroku addons:create sendgrid:starter`
 
 Response:
 `Created sendgrid-symmetrical-83723 as SENDGRID_PASSWORD, SENDGRID_USERNAME`
 
-`heroku config:set SENDGRID_USER_NAME=apikey`
+    heroku config:set SENDGRID_USER_NAME=apikey
+    heroku config:set SENDGRID_PASSWORD=<api-key>
 
-`heroku config:set SENDGRID_PASSWORD=<api-key>`
+To display your settings you can type in:
+`heroku config:get SENDGRID_USERNAME`
 
 ## Miscellaneous
 This README would normally document whatever steps are necessary to get the
